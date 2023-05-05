@@ -6,11 +6,11 @@ When you press the button on this site, it takes you to interesting/funny/myster
 
 To install the project, simply clone the repository and open the index.html file in a web browser.
 
-## Usage
+## Usage
 
 To use the app, click on the "Random Location" button, and the app will generate a random set of coordinates within the specified range. These coordinates will be used to open a Google Maps link in a new tab, displaying the location.
 
-## Customization
+## Customization
 
 To customize the range of coordinates that can be generated, simply edit the latitudeRange and longitudeRange variables in the script.js file.
 
