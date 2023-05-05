@@ -1,0 +1,134 @@
+<!----CREATED BY MEHMET KAHYA - 5.05.2023-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="script" href="script.js">
+    <link href="//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Random Strangest Location🕵️</title>
+  </head>
+
+  <div style="display: flex; justify-content: center; align-items: center; height: 90%;">
+    <button id="random-location-button">Random Strangest Location 🕵️</button>
+  </div>
+
+  <style>
+    :root{
+      background-color: #4F78D1;
+    }
+    #random-location-button {
+      padding: 10px 20px;
+      background-color: #FFFFFF;
+      border: none;
+      font-weight: bolder;
+      border-radius: 5px;
+      color: rgb(23, 23, 23);
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #random-location-button:hover {
+      background-color: #dbdada;
+    }
+    
+  </style>
+  <style>
+    .contact{
+      padding: 10px;
+      display: flex;
+      position: center;
+      align-items: space-around;
+      justify-content:center;
+      flex-direction: row;
+
+    }
+
+    .contact a {
+      margin: 10px;
+      font-size: 2rem;
+      text-align:center;
+      display: inline-block;
+      color: #E4E5EB;
+    }
+
+    .contact:hover{
+      color: #00754a;
+      
+    }
+  </style>
+      
+  <p style="font-family:monospace;font-weight: bold;font-size: larger; display: flex; justify-content: center; align-items: center; height: 0.1vh; color: #E4E5EB;">[ Mehmet Kahya - 05.05.2023 - open source ]</p>
+  <div class="contact">
+      <a href="https://www.twitter.com" target="_blank"><i class='fab fa-twitter'></i></a>
+      <a href="https://github.com/mehmetkahya0" target="_blank"><i class='fab fa-github'></i></a>
+      <a href="https://www.instagram.com/mehmettkahya_" target="_blank"><i class='fab fa-instagram'></i></a>     
+  </div>
+
+    <script>
+    const button = document.querySelector("#random-location-button");
+
+    const locations = [
+      {
+        name: "Airplane Boneyard",
+        coordinates: {
+          lat: 32.149989,
+          lng: -110.835842,
+        }
+      },
+      {
+        name: "Satanic rites",
+        coordinates: {
+          lat: 52.4801256,
+          lng: 62.1858301,      
+        }
+      },
+      {
+        name: "Swastika-Shaped Building Complex",
+        coordinates: {
+          lat: 32.676164,
+          lng: -117.157661,
+        }
+      },
+      {
+        name: "It’s okay, Jesus loves us",
+        coordinates: {
+          lat: 43.6450740,
+          lng: -115.9930810,
+        }
+      },
+      {
+        name: "The occultism of the Cartagena naval base",
+        coordinates: {
+          lat: 37.6587100,
+          lng: -1.0134399,
+        }
+      },
+      {
+        name: "Romantic Island",
+        coordinates: {
+          lat: 43.9785280,
+          lng: 15.3833720,
+        }
+      },
+      {
+        name: "A very musical forest",
+        coordinates: {
+          lat:  -33.867886,
+          lng: -63.987,
+        }
+      }
+    ];
+
+    button.addEventListener("click", function() {
+      const location = locations[Math.floor(Math.random() * locations.length)];
+      const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3!4m2!7m1!2e1`;
+      window.open(url, "_blank");
+    });
+    </script>
+</html>
+
+
