@@ -1,4 +1,4 @@
-# Random Strangest Locations
+# Random Strangest Locations 🕵️
 
 When you press the button on this site, it takes you to interesting/funny/mystery places on google maps!
 
