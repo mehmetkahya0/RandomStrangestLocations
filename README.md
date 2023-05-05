@@ -1,6 +1,6 @@
 # Random Strangest Locations
 
-This is a simple web app that allows users to randomly generate coordinates within a given range of latitude and longitude, and view the location on Google Maps.
+When you press the button on this site, it takes you to interesting/funny/mystery places on google maps!
 
 ## Installation
 
