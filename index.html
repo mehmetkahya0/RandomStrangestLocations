@@ -14,11 +14,12 @@
   <title>Random Strangest Location🕵️</title>
 
 </head>
-
+<button>
+  I SOLVED GOOGLE MAPS LOCATION SHARING BUG. NOW GOOGLE MAPS DOESN'T WANT YOUR LOCATION 
+</button>
 <div style="display: flex; justify-content: center; align-items: center; height: 90%;">
   <button id="random-location-button">Random Strangest Location 🕵️</button>
 </div>
-
 <style>
   :root {
     background-color: #4F78D1;
@@ -67,11 +68,12 @@
 
 <p
   style="font-family:monospace;font-weight: bold;font-size: larger; display: flex; justify-content: center; align-items: center; height: 0.1vh; color: #E4E5EB;">
-  [ Mehmet Kahya - open source - there are 26 locations on the site at now - I'll add more locations soon.]</p>
+  [ Mehmet Kahya - open source - there are 29 locations on the site at now - I'll add more locations soon.]</p>
 <div class="contact">
-  <a href="https://www.twitter.com" target="_blank"><i class='fab fa-twitter'></i></a>
+  <a href="https://www.twitter.com/mehmet1122334" target="_blank"><i class='fab fa-twitter'></i></a>
   <a href="https://github.com/mehmetkahya0" target="_blank"><i class='fab fa-github'></i></a>
   <a href="https://www.instagram.com/mehmettkahya_" target="_blank"><i class='fab fa-instagram'></i></a>
+  <a href="mailto:mehmetkahyakas5@gmail.com"target="_blank" style="font-size: 15px; font-family: monospace;">Feedback</a>
 </div>
 
 <script>
@@ -90,13 +92,6 @@
       coordinates: {
         lat: 52.4801256,
         lng: 62.1858301,
-      }
-    },
-    {
-      name: "Swastika-Shaped Building Complex",
-      coordinates: {
-        lat: 32.676164,
-        lng: -117.157661,
       }
     },
     {
@@ -160,13 +155,6 @@
       coordinates: {
         lat: -33.350534,
         lng: -71.653268,
-      }
-    },
-    {
-      name: "Jesus Loves You",
-      coordinates: {
-        lat: 43.645074,
-        lng: -115.993081,
       }
     },
     {
@@ -260,11 +248,34 @@
         lng: -123.008573,
       }
     },
+    {
+      name: "Island in a Lake in an Island in a Lake",
+      coordinates: {
+        lat: 69.793000,
+        lng: -108.241000,
+      }
+    },
+    {
+      name: "Russian Hexagonal Warehouses",
+      coordinates: {
+        lat: 54.35967,
+        lng: 41.32853,
+      }
+    },
+    {
+      name: "UFO Crash site",
+      coordinates: {
+        lat: -25.89493,
+        lng: 27.80137,
+      }
+    },
   ];
 
   button.addEventListener("click", function () {
     const location = locations[Math.floor(Math.random() * locations.length)];
-    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3!4m2!7m1!2e1`;
+    const name = (location.name)
+    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3`;
+    alert('You are going to: ' + name)
     window.open(url, "_blank");
   });
 </script>
