@@ -245,10 +245,10 @@
   ];
 
   button.addEventListener("click", function () {
-    const location = locations[Math.floor(Math.random() * locations.length)];
-   
-    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3!4m2!7m1!2e1`;
-
+  const location = locations[Math.floor(Math.random() * locations.length)];
+  const name = (location.name)
+    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3`;
+    alert('You are going to: ' + name)
     window.open(url, "_blank");
   });
 </script>
