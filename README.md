@@ -16,8 +16,8 @@ To use the app, click on the "Random Location" button, and the app will generate
 
 To customize the range of coordinates that can be generated, simply edit the latitudeRange and longitudeRange variables in the script.js file.
 
-## Screenshot
-<img width="1705" alt="Ekran Resmi 2023-05-05 21 59 03" src="https://user-images.githubusercontent.com/84154488/236545885-b3d739a4-0045-4a70-ac4b-2dcfff71785e.png">
+## Screenshot ( Version 0.4 Beta)
+<img width="2240" alt="Ekran Resmi 2023-05-09 00 27 49" src="https://user-images.githubusercontent.com/84154488/236939088-f7e04f49-5c05-4e4c-b588-f3fb626c22b9.png">
 
 ## License
 
