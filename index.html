@@ -12,73 +12,31 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <title>Random Strangest Location🕵️</title>
-
+  <link rel="stylesheet" src="style.css">
 </head>
-<button>
-  I SOLVED GOOGLE MAPS LOCATION SHARING BUG. NOW GOOGLE MAPS DOESN'T WANT YOUR LOCATION 
-</button>
+
+
 <div style="display: flex; justify-content: center; align-items: center; height: 90%;">
   <button id="random-location-button">Random Strangest Location 🕵️</button>
 </div>
-<style>
-  :root {
-    background-color: #4F78D1;
-  }
 
-  #random-location-button {
-    padding: 10px 20px;
-    background-color: #FFFFFF;
-    border: none;
-    font-weight: bolder;
-    border-radius: 5px;
-    color: rgb(23, 23, 23);
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
 
-  #random-location-button:hover {
-    background-color: #dbdada;
-  }
-</style>
-<style>
-  .contact {
-    padding: 10px;
-    display: flex;
-    position: center;
-    align-items: space-around;
-    justify-content: center;
-    flex-direction: row;
-
-  }
-
-  .contact a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align: center;
-    display: inline-block;
-    color: #E4E5EB;
-  }
-
-  .contact:hover {
-    color: #00754a;
-
-  }
-</style>
+<div class="pop-up">
+  <p style="color: rgb(0, 0, 0);">❗️ Announce:  I solved location sharing bug. Now Google Maps does not want your location. </p>
+</div>
 
 <p
   style="font-family:monospace;font-weight: bold;font-size: larger; display: flex; justify-content: center; align-items: center; height: 0.1vh; color: #E4E5EB;">
   [ Mehmet Kahya - open source - there are 29 locations on the site at now - I'll add more locations soon.]</p>
 <div class="contact">
-  <a href="https://www.twitter.com/mehmet1122334" target="_blank"><i class='fab fa-twitter'></i></a>
+  <a href="https://www.twitter.com" target="_blank"><i class='fab fa-twitter'></i></a>
   <a href="https://github.com/mehmetkahya0" target="_blank"><i class='fab fa-github'></i></a>
   <a href="https://www.instagram.com/mehmettkahya_" target="_blank"><i class='fab fa-instagram'></i></a>
-  <a href="mailto:mehmetkahyakas5@gmail.com"target="_blank" style="font-size: 15px; font-family: monospace;">Feedback</a>
 </div>
 
 <script>
-  const button = document.querySelector("#random-location-button");
 
+  const button = document.querySelector("#random-location-button");
   const locations = [
     {
       name: "Airplane Boneyard",
@@ -92,6 +50,13 @@
       coordinates: {
         lat: 52.4801256,
         lng: 62.1858301,
+      }
+    },
+    {
+      name: "Swastika-Shaped Building Complex",
+      coordinates: {
+        lat: 32.676164,
+        lng: -117.157661,
       }
     },
     {
@@ -155,6 +120,13 @@
       coordinates: {
         lat: -33.350534,
         lng: -71.653268,
+      }
+    },
+    {
+      name: "Jesus Loves You",
+      coordinates: {
+        lat: 43.645074,
+        lng: -115.993081,
       }
     },
     {
@@ -235,6 +207,7 @@
       }
     },
     {
+      
       name: "ALIENS !!!!11!!?",
       coordinates: {
         lat: 45.703536,
@@ -273,11 +246,11 @@
 
   button.addEventListener("click", function () {
     const location = locations[Math.floor(Math.random() * locations.length)];
-    const name = (location.name)
-    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3`;
-    alert('You are going to: ' + name)
+   
+    const url = `https://www.google.com/maps/@${location.coordinates.lat},${location.coordinates.lng},18z/data=!3m1!1e3!4m2!7m1!2e1`;
+
     window.open(url, "_blank");
   });
 </script>
-
+</body>
 </html>
