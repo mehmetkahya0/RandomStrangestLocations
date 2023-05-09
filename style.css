@@ -1,59 +1,57 @@
-  :root {
-    background-color: #4F78D1;
-  }
+:root {
+  background-color: #4F78D1;
+}
 
-  #random-location-button {
-    padding: 10px 20px;
-    background-color: #FFFFFF;
-    border: none;
-    font-weight: bolder;
-    border-radius: 5px;
-    color: rgb(23, 23, 23);
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
+#random-location-button {
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  border: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  #random-location-button:hover {
-    background-color: #dbdada;
-  }
+#random-location-button:hover {
+  background-color: #dbdada;
+}
 
-   .contact {
-    padding: 10px;
-    display: flex;
-    position: center;
-    align-items: space-around;
-    justify-content: center;
-    flex-direction: row;
+.contact {
+  padding: 10px;
+  display: flex;
+  position: center;
+  align-items: space-around;
+  justify-content: center;
+  flex-direction: row;
 
-  }
+}
 
-  .contact a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align: center;
-    display: inline-block;
-    color: #E4E5EB;
-  }
+.contact a {
+  margin: 10px;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  color: #E4E5EB;
+}
 
-  .contact:hover {
-    color: #00754a;
-
-  }
-  .pop-up {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 15px;
-    padding: 0.1%;
-    background-color: rgba(173, 216, 230, 0.471);
-    border-radius: 10px;
-    font-weight: bold;
-    padding-left: 0.75%;
-    padding-right: 0.5%;
-    font-family: monospace;
-    font-size: medium;
+.contact:hover {
+  color: #00754a;
+}
+.pop-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  padding: 0.1%;
+  background-color: rgba(173, 216, 230, 0.471);
+  border-radius: 10px;
+  font-weight: bold;
+  padding-left: 0.75%;
+  padding-right: 0.5%;
+  font-family: monospace;
+  font-size: medium;
     /* Box shadow*/
-    box-shadow: 5px 10px #00000035;
-    
-  }
+  box-shadow: 5px 10px #00000035;
+}
